@@ -1,4 +1,5 @@
 import random
+from CAC import cheatcode
 
 def the_second_game():
 
@@ -253,6 +254,21 @@ def the_second_game():
                 # Normal monster encounter
                 monster_type, monster_health, monster_attack, monster_attack_dmg = new_monster_generator()
                 input(f"You have encountered a {monster_type} with {monster_health} HP!")
+                attack_choice = input(f"what do you do coose a attack from the following list {attacks}")
+                if attack_choice.lower() == "shriek":
+                    pass
+                elif attack_choice.lower() == "bite":
+                    pass
+                elif attack_choice.lower() == "blood drain":
+                    pass
+                elif attack_choice.lower() == cheatcode:#no peaking for the cheat code in this code
+                    monster_health =0
+                    fight_count = 30
+                    print(fight_count)
+                    break
+
+
+
 
     elif choice.lower() == "n":
         print("you are a coward!")
