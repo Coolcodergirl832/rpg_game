@@ -315,8 +315,8 @@ def the_first_game():
                         
                         if monster_health <= 0:
                             print(f"You defeated the {monster_type}! You have beaten the game! Congratulations!")
-                            game_won = True
                             break
+                        first_game_won = True
                         
                         player_health -= monster_attack_dmg
                         print(f"The {monster_type} used {monster_attack} and did {monster_attack_dmg} damage! You now have {player_health} health.")
